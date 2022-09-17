@@ -1,0 +1,7 @@
+import React from 'react'
+import { ACTION } from './Calci'
+export default function DigitButton({dispatch,digit}) {
+  return (
+    <button onClick={()=>{dispatch({type: ACTION.ADD_DIGIT,payload:{digit}})}}>{digit}</button>
+  )
+}
